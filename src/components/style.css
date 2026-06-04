@@ -1277,6 +1277,7 @@ body {
 .busi-school {
     width: 100%;
     background: rgb(245, 233, 233);
+    margin-top: -5px;
 
 }
 
@@ -1357,6 +1358,208 @@ body {
     }
 }
 
+.financeContainer{
+    width: 100%;
+    background-color: white;
+    color: black;
+    font-family: poppins-semibold, sans-serif;
+}
+
+.insidefinancePositioning{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+@media screen and (max-width: 900px){
+    .insidefinancePositioning{
+        width: 80%;
+    }
+}
+
+.alabcontent{
+    width: 60%;
+    font-family: poppins-semibold, sans-serif;
+}
+
+.alabcontent h3{
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.alabcontent p{
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.modules{
+    width: 100%;
+    padding: 10px;
+}
+
+.modules h3{
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.alabimage{
+    width: 400px;
+    height: auto;
+    margin-left: 30px;
+}
+@media screen and (max-width:950px){
+    .alabimage{
+        width: 100%;
+        margin-left: 0;
+
+    }
+    .alabcontent{
+        width: 100%;
+    }
+}
+
+.insidemodules{
+    display: flex;
+    align-items: center;
+    background-color: #EFF3EA;
+    width: fit-content;
+    padding: 20px;
+}
+
+.insidemodules p{
+    font-family: poppins-semibold, sans-serif;
+    line-height: 1.9;
+    font-size: 16px;
+}
+@media screen and (max-width:950px){
+    .modules{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .insidemodules{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+    .insidemodules p{
+        text-align: left;
+        margin-right: auto;
+    }
+}
+
+.packagesContainer{
+    display: flex;
+    flex-direction: column;
+    font-family: poppins-semibold, sans-serif;
+    margin-top: 30px;
+}
+
+.allPackages{
+    display: flex;
+    justify-content: space-between;
+}
+
+.packagesinfo{
+    position: relative;
+    width: 31%;
+    background-color: #FBFBFB;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px -8px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 20px -8px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 20px -8px rgba(0,0,0,0.75);
+}
+
+@media screen and (max-width: 950px){
+    .allPackages{
+        display: flex;
+        flex-direction: column;
+    }
+    .packagesinfo{
+        width: 350px;
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width: 650px){
+    .allPackages{
+        display: flex;
+        flex-direction: column;
+    }
+    .packagesinfo{
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width: 600px){
+    .packagesinfo{
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}
+
+.packagename{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.ruler{width: 70%;}
+
+.packagewriteup{
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+.PackagePrice{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.packagewriteup p{
+    padding: 20px;
+}
+
+.packageinfobottom{
+    background-color: #003161;
+    border-radius: 0 0 20px 20px;
+    color: white;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    position: absolute;
+}
+
+.btnlink{
+    height: 30px;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.btnlink:hover{
+    background-color: #3674B5;
+}
+
+#multipleprice{
+    font-size: 18px;
+    padding: 0 20px;
+    text-align: center;
+}
+
+
 .theprofbusiness h3 {
     font-size: 20px;
     margin-bottom: 5px;
@@ -1376,7 +1579,7 @@ body {
     width: 100%;
     padding-top: 30px;
     padding-bottom: 30px;
-    background: #EEEFE0;
+    background: #f4f5e8;
 }
 
 .secondbusinndownsec {

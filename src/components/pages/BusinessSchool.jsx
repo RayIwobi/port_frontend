@@ -1,3 +1,4 @@
+import {Link} from "react-router-dom"
 import '../style.css'
 import bs from '../assets/other_images/bs.jpg'
 import aspirin from '../assets/other_images/aspirin.jpg'
@@ -14,6 +15,7 @@ import member1 from '../assets/other_images/member1.png'
 import member2 from '../assets/other_images/member2.png'
 import member3 from '../assets/other_images/member3.png'
 import member4 from '../assets/other_images/member4.png'
+import alabimage from '../assets/other_images/alabimage.jpg'
 
 function BusinessSchool() {
     return (
@@ -103,6 +105,124 @@ function BusinessSchool() {
                         </div>
                     </div>
                     <img src={handshake} alt='handshake' className='handshake'/>
+                    <div className='financeContainer'>
+                        <div className='insidefinancePositioning'>
+                            <div className='alabcontent'>
+                                <h3>A-LAB Cohort 3: Leadership & Organizational Development Program</h3>
+                                <p>
+                                    The A-LAB program is designed as a comprehensive journey for leaders 
+                                    and teams who want to elevate their effectiveness, collaboration, 
+                                    and long-term impact. It blends practical tools with strategic 
+                                    frameworks, ensuring participants not only learn but also apply 
+                                    concepts that drive measurable organizational success.
+                                </p>
+                                <h3>Key learning outcomes</h3>
+                                <p>
+                                    By completting all 7 modules, participants will:<br/>
+                                    1. Transition from their current leadership leveland effectiveness to its pinnacle<br/>
+                                    2. Build and manage high performing teams by learning its key dynamic stages<br/>
+                                    3. Be equipped with skills necessary fordeveloping products and services that meets the evolving market standards<br/>
+                                    4. Learn to align company strategic structure and culture for organizational success<br/>
+                                    5. Learn to enhance client engagement and retention to drive profitability<br/>
+                                </p>
+                            </div>
+                            <div className="modules">
+                                <h3>Modules</h3>
+                                <div className="insidemodules">
+                                    <p>
+                                        1. Leadership growthe path and transitions<br/>
+                                        2. People growth path and transitions<br/>
+                                        3. Team growth path and transition<br/>
+                                        4. Client growth path and transition<br/>
+                                        5. Product growth path and transition<br/>
+                                        6. Dynamics of strategic structure<br/>
+                                        7. Dynamics of strategic culture<br/>
+                                    </p>
+                                    <img src={alabimage} alt="alab" className="alabimage"/>
+                                </div>
+                            </div>
+                            <div className='packagesContainer'>
+                                <h2>Packages</h2>
+                                <div className="allPackages">
+                                <div className='packagesinfo'>
+                                    <div className='packagename'>Online Package</div>
+                                    <hr className='ruler'/>
+                                    <div className='packagewriteup'>
+                                        <div className='PackagePrice'>N25,000</div>
+                                        <p>
+                                            Virtual participation from anywhere<br/><br/>
+
+                                            Downloadable resources: slides and recorded sessions<br/><br/>
+
+                                            Access to an exclusive online community for networking and peer learning<br/><br/>
+
+                                            Certificate of participation (e-certificate)<br/><br/>
+
+                                            This package provides flexibility and affordability, perfect for professionals who 
+                                            prefer remote learning but still want structured resources and certification<br/><br/>
+                                        </p>
+
+                                        <div className='packageinfobottom'>
+                                            <Link className="btnlink">Apply now</Link>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className='packagesinfo'>
+                                    <div className='packagename'>Corporate Package</div>
+                                    <hr className='ruler'/>
+                                    <div className='packagewriteup'>
+                                        <div className='PackagePrice' id="multipleprice">Exclusive to corporate organizations 
+                                            enrolling multiple executives:</div>
+                                        <p>
+                                            <strong>₦150,000</strong> (3 slots)<br/><br/>
+
+                                            <strong>₦200,000</strong> (5 slots)<br/><br/>
+
+                                            <strong>Includes all Executive Package benefits</strong><br/><br/>
+
+                                            Designed for organizations seeking collective leadership development and team alignment<br/><br/>
+
+                                            This package offers value for organizations by combining cost efficiency with collective growth, 
+                                            ensuring executives learn together and apply strategies cohesively<br/><br/>
+                                        </p>
+
+                                        <div className='packageinfobottom'>
+                                            <Link className="btnlink">Apply now</Link>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className='packagesinfo'>
+                                    <div className='packagename'>Executive Package</div>
+                                    <hr className='ruler'/>
+                                    <div className='packagewriteup'>
+                                        <div className='PackagePrice'>N75,000</div>
+                                        <p>
+                                            Physical class attendance <br/><br/>
+
+                                            Interactive workshops: case studies, group discussions, and practical exercises<br/><br/>
+
+                                            Networking opportunities: face-to-face connections with industry experts and executives<br/><br/>
+
+                                            Business audit & strategy review: tailored insights into organizational strengths and gaps<br/><br/>
+
+                                            Business toolkit: slides, recorded materials, and templates for practical application<br/><br/>
+
+                                            Printed & digital certificate of completion<br/><br/>
+
+                                            Tea break and lunch included<br/><br/>
+
+                                            Ideal for immersive learning and direct mentorship.<br/><br/>
+                                        </p>
+
+                                        <div className='packageinfobottom'>
+                                            <Link className="btnlink">Apply now</Link>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
                     <div className='businndownsec'>
                         <div className='secondbusinndownsec' >
                             <div className='insidebus' id='fort2'>
@@ -144,7 +264,7 @@ function BusinessSchool() {
                                         advancement.
                                     </p>
                                     <p>
-                                        <strong>Global Competitiveness</strong>
+                                        <strong>Global Competitiveness</strong>: 
                                         Our programs are designed to prepare participants to operate confidently
                                         in local and international markets, strengthening competitiveness,
                                         adaptability, and global relevance.
