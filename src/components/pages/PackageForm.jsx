@@ -35,6 +35,14 @@ function BusinessSchool() {
       
         const sendEmail = (e) => {
           e.preventDefault();
+          if(client_name === ""){
+            toast.error("please type your name")
+            return
+          }
+          if(client_number === ""){
+            toast.error("please type your number")
+            return
+          }
       
           emailjs
             .sendForm('service_iuwzaut', 'template_u95efar', form.current, {
