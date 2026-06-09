@@ -57,9 +57,9 @@ function Projects() {
               <div className="projtitle">Custom Exam CBT app</div>
               <div className="progtext">
                 <p>
-                  A full-stack SaaS-style dashboard application for managing
-                  users, projects, communication, and schedules in one
-                  centralized system.{" "}
+                  A custom CBT platform designed to simplify examination 
+                  management for schools, training institutions, certification 
+                  bodies, and organizations.{" "}
                   <span style={{ color: "Skyblue" }}>more...</span>
                 </p>
               </div>
