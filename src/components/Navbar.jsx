@@ -1,54 +1,65 @@
-import { useState, useRef, useEffect } from 'react'
-import './Navbar.css'
-import catchlogo from './assets/icons/catchlogo.png'
-import { NavLink } from 'react-router-dom'
+import { useState } from "react";
+import './nav.css'
 
+export default function Navbar() {
+  const [active, setActive] = useState("home");
 
+  const handleScroll = (sectionId) => {
+    setActive(sectionId);
 
-function Navbar() {
-    const [isOpen, setIsOpen] = useState(false)
-    const menuRef = useRef(null)
+    const section = document.getElementById(sectionId);
+    section.scrollIntoView({ behavior: "smooth" });
+  };
 
-    //close menu when clicking outsdie
-    useEffect(() => {
-        function handleClickOutside(e) {
-            if (menuRef.current && !menuRef.current.contains(e.target)) {
-                setIsOpen(false)
-            }
-        }
-        document.addEventListener("mousedown", handleClickOutside);
-        return () => document.removeEventListener("mousedown", handleClickOutside)
-    }, [])
+  return (
+    <div>
+    <nav className="navbar">
+      <ul >
+        <li
+          // className={active === "home" ? "active" : ""}
+          onClick={() => handleScroll("home")}
+        >
+          Home
+        </li>
 
-    return (
-        <div>
-            <nav className="navbar">
-                <div className="logo">
-                    <img src={catchlogo} alt='catchlogo' className='catchlogo' />
-                </div>
+        <li
+          className={active === "about" ? "active" : ""}
+          onClick={() => handleScroll("about")}
+        >
+          About
+        </li>
 
-                <button
-                    className="hamburger"
-                    onClick={() => setIsOpen(!isOpen)}
-                >
-                    ☰
-                </button>
+        <li
+          className={active === "projects" ? "active" : ""}
+          onClick={() => handleScroll("projects")}
+        >
+          Projects
+        </li>
 
-                <ul
-                    ref={menuRef}
-                    className={`menu ${isOpen ? "open" : ""}`}
-                >
-                    <NavLink to='/'><li onClick={() => setIsOpen(false)}>Home</li></NavLink>
-                    <NavLink to='/about'><li onClick={() => setIsOpen(false)}>About Catchline</li></NavLink>
-                    <NavLink to='/services'><li onClick={() => setIsOpen(false)}>Our Services</li></NavLink>
-                    <NavLink to='/programmes'><li onClick={() => setIsOpen(false)}>Programmes</li></NavLink>
-                    <NavLink to='/business-school'><li onClick={() => setIsOpen(false)}>Business School</li></NavLink>
-                    <NavLink to='/communities'><li onClick={() => setIsOpen(false)}>Communities</li></NavLink>
-                    <NavLink to='/insights'><li onClick={() => setIsOpen(false)}>Insights</li></NavLink>
-                </ul>
-            </nav>
-        </div>
-    )
+        <li
+          className={active === "experience" ? "active" : ""}
+          onClick={() => handleScroll("experience")}
+        >
+          Experience
+        </li>
+
+        {/* <li
+          className={active === "tools" ? "active" : ""}
+          onClick={() => handleScroll("tools")}
+        >
+          Tools
+        </li> */}
+
+        <li
+          className={active === "contact" ? "active" : ""}
+          onClick={() => handleScroll("contact")}
+        >
+          Contact
+        </li>
+      </ul>
+    </nav>
+    </div>
+  );
 }
 
-export default Navbar
+

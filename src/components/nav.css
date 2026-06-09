@@ -1,0 +1,45 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #456882;
+  color: white;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+@media screen and (max-width:800px){
+  .navbar{
+    display: none;
+  }
+}
+@media screen and (max-width:600px){
+  .navbar{
+    display: none;
+  }
+}
+
+nav ul {
+  list-style: none;
+  gap: 20px;
+  color: white;
+  display: flex;
+  cursor: pointer;
+}
+
+li:hover{
+  color:red
+}
+
+
+/* nav li.active {
+  color: #ff5733;
+  font-weight: bold;
+} */
+
+/* .section {
+  min-height: 100vh;
+  padding-top: 100px;
+}  */
