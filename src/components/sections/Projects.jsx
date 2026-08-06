@@ -170,7 +170,7 @@ function Projects() {
                         </div>
                     </Link> */}
 
-          <Link to="/amazonscraper">
+          {/* <Link to="/amazonscraper">
             <div className="projectblocks">
               <img src={scraper} alt="" className="projimg1" />
               <div className="projtitle">Amazon webscraper</div>
@@ -183,9 +183,9 @@ function Projects() {
                 </p>
               </div>
             </div>
-          </Link>
+          </Link> */}
 
-          <Link to="/authentication">
+          {/* <Link to="/authentication">
             <div className="projectblocks">
               <img src={authenticate} alt="" className="projimg1" />
               <div className="projtitle">Authentication system</div>
@@ -198,7 +198,7 @@ function Projects() {
                 </p>
               </div>
             </div>
-          </Link>
+          </Link> */}
 
           {/* <Link to='/yarnix'>
                         <div className='projectblocks'>
