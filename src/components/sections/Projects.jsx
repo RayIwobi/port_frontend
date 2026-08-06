@@ -61,7 +61,7 @@ function Projects() {
                 <p>
                   Kobowise is a modern fintech platform designed to help individuals 
                   build healthy financial habits through automated savings, 
-                  goal-based planning, and smart wealth management
+                  goal-based planning, and smart wealth management.
                   <span style={{ color: "Skyblue" }}>more...</span>
                 </p>
               </div>
