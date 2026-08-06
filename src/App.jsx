@@ -12,6 +12,7 @@ import Movieapp from "./components/projectPages/Movieapp";
 import ScrollToTop from './ScrollToTop'
 import ScrollUpButton from "./ScrollUpButton";
 import Catchline from "./components/projectPages/Catchline";
+import Kobowise from "./components/projectPages/Kobowise";
 import Dashboard from "./components/projectPages/Dashboard";
 import Exam_cbt from "./components/projectPages/Exam_cbt";
 
@@ -32,6 +33,7 @@ function App() {
         <Route path='movieapp' element={<Movieapp />} />
         <Route path='yarnix' element={<Yarnix />} />
         <Route path='catchline' element={<Catchline />} />
+        <Route path='kobowise' element={<Kobowise />} />
         <Route path='dashboard' element={<Dashboard />} />
         <Route path='exam_cbt' element={<Exam_cbt />} />
       </Routes>

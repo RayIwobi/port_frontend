@@ -11,6 +11,7 @@ import meter from "../assets/meter.jpg";
 import authenticate from "../assets/authenticate.png";
 import catch1 from "../projectPages/assets/catch1.jpg";
 import front from "../projectPages/assets/front.jpg";
+import kobo from "../assets/kobo.jpg";
 import { Link } from "react-router-dom";
 
 function Projects() {
@@ -51,15 +52,16 @@ function Projects() {
               </div>
             </div>
           </Link>
-          <Link to="/exam_cbt">
+
+          <Link to="/kobowise">
             <div className="projectblocks">
-              <img src={cbt} alt="" className="projimg1" />
-              <div className="projtitle">Custom Exam CBT app</div>
+              <img src={kobo} alt="" className="projimg1" />
+              <div className="projtitle">Kobowise</div>
               <div className="progtext">
                 <p>
-                  A custom CBT platform designed to simplify examination 
-                  management for schools, training institutions, certification 
-                  bodies, and organizations.{" "}
+                  Kobowise is a modern fintech platform designed to help individuals 
+                  build healthy financial habits through automated savings, 
+                  goal-based planning, and smart wealth management
                   <span style={{ color: "Skyblue" }}>more...</span>
                 </p>
               </div>
@@ -80,6 +82,22 @@ function Projects() {
               </div>
             </div>
           </Link>
+          <Link to="/exam_cbt">
+            <div className="projectblocks">
+              <img src={cbt} alt="" className="projimg1" />
+              <div className="projtitle">Custom Exam CBT app</div>
+              <div className="progtext">
+                <p>
+                  A custom CBT platform designed to simplify examination 
+                  management for schools, training institutions, certification 
+                  bodies, and organizations.{" "}
+                  <span style={{ color: "Skyblue" }}>more...</span>
+                </p>
+              </div>
+            </div>
+          </Link>
+
+          
           <Link to="https://product-listing-ecru-kappa.vercel.app/">
             <div className="projectblocks">
               <img src={front} alt="" className="projimg1" />
