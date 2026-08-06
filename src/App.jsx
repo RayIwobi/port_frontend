@@ -3,8 +3,8 @@ import './App.css'
 import Home from "./components/Home";
 import IdeaVault from './components/projectPages/IdeaVault'
 import Ecommerce from "./components/projectPages/Ecommerce";
-import Amazonscraper from "./components/projectPages/Amazonscraper";
-import Authentication from "./components/projectPages/Authentication";
+// import Amazonscraper from "./components/projectPages/Amazonscraper";
+// import Authentication from "./components/projectPages/Authentication";
 import Metering from "./components/projectPages/Metering";
 import Quizapp from "./components/projectPages/Quizapp";
 import Yarnix from "./components/projectPages/Yarnix";
@@ -26,8 +26,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path='ideavault' element={<IdeaVault />} />
         <Route path='ecommerce' element={<Ecommerce />} />
-        <Route path='amazonscraper' element={<Amazonscraper />} />
-        <Route path='authentication' element={<Authentication />} />
+        {/* <Route path='amazonscraper' element={<Amazonscraper />} />
+        <Route path='authentication' element={<Authentication />} /> */}
         <Route path='metering' element={<Metering />} />
         <Route path='quizapp' element={<Quizapp />} />
         <Route path='movieapp' element={<Movieapp />} />
