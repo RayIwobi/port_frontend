@@ -61,7 +61,6 @@ function Ecommerce() {
               <div>
                 <div className="projectpages">
                   <h1>Projects Dashboard Application </h1>
-                  <div>(under development)</div>
 
                   <div className="thelinknavigation">
                     <img src={handpointing} alt="livewebsite" />

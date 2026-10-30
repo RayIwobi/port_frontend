@@ -15,6 +15,8 @@ import ScrollUpButton from "./ScrollUpButton";
 import Catchline from "./components/projectPages/Catchline";
 import Kobowise from "./components/projectPages/Kobowise";
 import Dashboard from "./components/projectPages/Dashboard";
+import Invoice from "./components/projectPages/Invoice-Procurement";
+import Inventory from "./components/projectPages/Inventory";
 import Exam_cbt from "./components/projectPages/Exam_cbt";
 
 function App() {
@@ -36,6 +38,8 @@ function App() {
         <Route path='catchline' element={<Catchline />} />
         <Route path='kobowise' element={<Kobowise />} />
         <Route path='dashboard' element={<Dashboard />} />
+        <Route path='invoice' element={<Invoice />} />
+        <Route path='inventory' element={<Inventory />} />
         <Route path='exam_cbt' element={<Exam_cbt />} />
       </Routes>
     </Router>

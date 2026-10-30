@@ -5,7 +5,8 @@ import quizapp from "../assets/quizapp.jpg";
 import movieplace from "../assets/movieplace.jpg";
 import dashboard from "../assets/dashboard.jpg";
 import cbt from "../assets/cbt.jpg";
-import meter from "../assets/meter.jpg";
+import invoice from "../assets/invoice.jpg";
+import inventory from "../assets/inventory.jpg";
 import catch1 from "../projectPages/assets/catch1.jpg";
 import front from "../projectPages/assets/front.jpg";
 import kobo from "../assets/kobo.jpg";
@@ -38,8 +39,9 @@ const projects = [
   {
     title: "Procurement & Invoice Systems",
     category: "Business systems",
-    type: "concept",
-    image: meter,
+    type: "case",
+    to: "/invoice",
+    image: invoice,
     description:
       "Business workflow tools for quotations, purchase orders, invoices, vendors, waybills and petty-cash tracking.",
     tags: ["Workflow automation", "Permissions", "Reporting"],
@@ -47,8 +49,9 @@ const projects = [
   {
     title: "Inventory & Pharmacy Management",
     category: "Business systems",
-    type: "concept",
-    image: cbt,
+    type: "case",
+    to: "/inventory",
+    image: inventory,
     description:
       "Stock, sales, returns, profit reports and operational records for inventory-led businesses and pharmacy workflows.",
     tags: ["Inventory", "Reporting", "Data management"],
@@ -93,36 +96,7 @@ const projects = [
       "A polished corporate web presence for a consulting and business development organisation.",
     tags: ["Corporate website", "Responsive UI"],
   },
-  {
-    title: "Engineering & Metering Website",
-    category: "Websites",
-    type: "case",
-    to: "/metering",
-    image: meter,
-    description:
-      "An engineering-focused website presenting metering and instrumentation services and information.",
-    tags: ["Business website", "Responsive UI"],
-  },
-  {
-    title: "Product Listing Experience",
-    category: "E-commerce",
-    type: "external",
-    to: "https://product-listing-ecru-kappa.vercel.app/",
-    image: front,
-    description:
-      "A frontend demonstration consuming an e-commerce API to display and browse product data.",
-    tags: ["API integration", "Product UI"],
-  },
-  {
-    title: "Movie Information App",
-    category: "API projects",
-    type: "case",
-    to: "/movieapp",
-    image: movieplace,
-    description:
-      "A movie discovery interface backed by external data, with a focus on retrieving and presenting useful details.",
-    tags: ["External API", "Data display"],
-  },
+  
   {
     title: "IdeaVault",
     category: "Productivity",
